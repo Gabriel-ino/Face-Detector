@@ -17,7 +17,7 @@ def draw_rectangle(image, coordinates, **kwargs):
     try:
         eyes_coordinates = kwargs.get('eyes_coordinates')
 
-        for x,y,w,h in eyes_coordinates:
+        for x, y, w, h in eyes_coordinates:
             print((w, h))
             cv2.rectangle(image, (x, y), (x + w, y + h), (0, 0, 255), 2)
     except Exception as err:
